@@ -1,0 +1,22 @@
+<div class="modal-default">
+  <h3 mat-dialog-title>
+    <mat-icon>search</mat-icon>
+    <span>Buscar Cidade</span>
+  </h3>
+  <div mat-dialog-content>
+    <form (ngSubmit)="submit($event)">
+      <div fxLayout="column">
+        <mat-form-field appearance="outline">
+          <mat-label>CEP:</mat-label>
+          <input matInput maxlength="8" placeholder="Ex. 29750009">
+        </mat-form-field>
+      </div>
+    </form>
+  </div>
+  <div mat-dialog-actions fxLayout="row-reverse">
+    <div>
+      <button mat-stroked-button mat-dialog-close>Cancel</button>
+      <button mat-raised-button type="submit" color="primary">Buscar</button>
+    </div>
+  </div>
+</div>

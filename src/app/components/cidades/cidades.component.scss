@@ -1,0 +1,45 @@
+.panel {
+  margin-top: 30px;
+  background-color: #fff;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  &-header {
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    margin: -1px -1px 0;
+    background-color: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    h2 {
+      font-size: 16px;
+      font-weight: normal;
+      margin: 0;
+    }
+  }
+  &-content {
+    .mat-list {
+      &-item {
+        &-content {
+          &_inner {
+            width: 100%;
+            font-size: 14px;
+            line-height: 1;
+            strong {
+              color: #444;
+              display: block;
+              font-weight: normal;
+            }
+            span {
+              font-size: 10px;
+              color: #CCC;
+            }
+          }
+        }
+      }
+    }
+  }
+}

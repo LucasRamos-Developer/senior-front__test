@@ -1,0 +1,10 @@
+.modal-default {
+  .mat-dialog-title {
+    text-align: center;
+    > span {
+      display: block;
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+}

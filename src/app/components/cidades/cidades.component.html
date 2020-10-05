@@ -1,0 +1,25 @@
+<div class="panel">
+  <div class="panel-header">
+    <h2>Lista de Cidades Cadastradas</h2>
+    <div class="actions">
+      <button mat-raised-button color="accent" (click)="search()">
+        Buscar
+      </button>
+    </div>
+  </div>
+  <div class="panel-content">
+    <mat-list>
+      <mat-list-item *ngFor="let cidade of cidades | paginate : {itemsPerPage: size, currentPage: page, totalItems: total }">
+        <div class="mat-list-item-content_inner">
+          <strong>{{ cidade.nome }}</strong>
+          <span>Estado: {{ cidade.uf }}</span>
+        </div>
+        <button mat-icon-button (click)="showInfo(link)">
+          <mat-icon>arrow_forward</mat-icon>
+        </button>
+       <mat-divider></mat-divider>
+      </mat-list-item>
+    </mat-list>
+    <pagination-controls responsive="true" (pageChange)="handlePageChange($event)"></pagination-controls>
+  </div>
+</div>
